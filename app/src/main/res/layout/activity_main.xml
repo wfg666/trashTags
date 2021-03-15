@@ -32,31 +32,25 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/bt_connect"
+                    android:id="@+id/btFind"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="CONNECT" />
-
-                <Button
-                    android:id="@+id/bt_find"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="FIND" />
+                    android:text="FIND"/>
             </LinearLayout>
 
-            <ProgressBar
-                android:id="@+id/progressBar"
-                style="@android:style/Widget.Material.ProgressBar.Horizontal"
+            <LinearLayout
+                android:id="@+id/barsLo"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:max="100"
-                android:progress="70" />
+                android:layout_height="381dp"
+                android:orientation="vertical" />
 
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
-                android:layout_height="373dp"
-                android:text="TextView" />
+                android:layout_height="127dp"
+                android:text="TextView"
+                android:textSize="10sp"
+                android:typeface="monospace" />
 
         </LinearLayout>
 
