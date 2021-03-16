@@ -1,6 +1,8 @@
 package news.thu.trashtags;
 
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.hardware.usb.UsbDeviceConnection;
 import android.hardware.usb.UsbManager;
 import android.os.Bundle;
@@ -150,6 +152,14 @@ public class MainActivity extends AppCompatActivity {
 
         textview = findViewById(R.id.textView);
         btFind = findViewById(R.id.btFind);
+
+        ((Button)findViewById(R.id.btManage)).setOnClickListener(
+                new View.OnClickListener(){
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(MainActivity.this, ManageActivity.class));}
+                }
+        );
 
         btFind.setOnClickListener(btFindOnClickListener);
 
